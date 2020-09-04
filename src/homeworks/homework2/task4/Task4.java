@@ -17,5 +17,6 @@ public class Task4 {
             value = 10;
         }
         System.out.println(value);
+        scanner.close();
     }
 }
