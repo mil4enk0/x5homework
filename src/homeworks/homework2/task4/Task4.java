@@ -13,7 +13,7 @@ public class Task4 {
         else if (value < 0) {
             value = value - 2;
         }
-        else if (value == 0) {
+        else {
             value = 10;
         }
         System.out.println(value);

@@ -22,5 +22,6 @@ public class Task6 {
         else if (value > 0 && (value % 2) == 0) {
             System.out.println(value + " - положительное чётное число");
         }
+        scanner.close();
     }
 }

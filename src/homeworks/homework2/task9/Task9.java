@@ -11,9 +11,14 @@ public class Task9 {
         reverseArray(values);
     }
 
-    public static void reverseArray (int[] array) {
-        for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(array[i] + " ");
+    private static void reverseArray (int[] array) {
+        int temp;
+        int l = array.length;
+        for (int i = 0; i < l/2; i++) {
+            temp = array[l-i-1];
+            array[l-i-1] = array[i];
+            array[i] = temp;
         }
+        System.out.println(Arrays.toString(array));
     }
 }

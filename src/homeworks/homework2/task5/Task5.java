@@ -3,7 +3,7 @@ package homeworks.homework2.task5;
 import java.util.Scanner;
 
 public class Task5 {
-        public static void main (String[]args){
+        public static void main(String[]args) {
         System.out.println("Введите первое целое число:");
         Scanner scanner = new Scanner(System.in);
         int valueFirst = scanner.nextInt();
@@ -17,7 +17,7 @@ public class Task5 {
         scanner.close();
     }
 
-        private static int findMinValue ( int[] array){
+        private static int findMinValue(int[] array) {
             int min = array[0];
             for (int i = 0; i < array.length; i++) {
                 if (array[i] < min)
