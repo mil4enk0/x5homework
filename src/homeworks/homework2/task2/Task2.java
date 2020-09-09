@@ -7,7 +7,7 @@ public class Task2 {
         System.out.println("Введите целое трёхзначное число:");
         Scanner scanner = new Scanner(System.in);
         String value = scanner.nextLine();
-        if ((value.length() > 3)) {
+        if (value.length() > 3) {
             System.out.println("Введённое число должно быть трёхзначным!");
             scanner.close();
             return;
