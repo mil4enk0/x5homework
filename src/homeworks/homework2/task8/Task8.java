@@ -20,8 +20,7 @@ public class Task8 {
             if (values[i] > 0) {
                 positiveNumbersSum += values[i];
                 positiveNumbersQuantity += 1;
-            }
-            else if (values[i] < 0) {
+            } else if (values[i] < 0) {
                 if (values[i] % 2 == 0) {
                     evenNegativeNumbersSum += values[i];
                 }
@@ -34,7 +33,7 @@ public class Task8 {
         System.out.println("Сумма отрицательных чётных чисел данного массива: " + evenNegativeNumbersSum);
         System.out.println("Количество положительных чисел данного массива: " + positiveNumbersQuantity);
         System.out.println("Среднее арифметическое отрицательных чисел данного массива: "
-                + (double)negativeNumbersSum / negativeNumbersQuantity);
+                + (double) negativeNumbersSum / negativeNumbersQuantity);
     }
 }
 

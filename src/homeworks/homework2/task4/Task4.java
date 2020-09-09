@@ -9,11 +9,9 @@ public class Task4 {
         int value = scanner.nextInt();
         if (value > 0) {
             value = value + 1;
-        }
-        else if (value < 0) {
+        } else if (value < 0) {
             value = value - 2;
-        }
-        else {
+        } else {
             value = 10;
         }
         System.out.println(value);

@@ -11,6 +11,5 @@ public class Task3 {
             value = value + 1;
         }
         System.out.println(value);
-        scanner.close();
     }
 }

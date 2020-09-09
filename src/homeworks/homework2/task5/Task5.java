@@ -3,28 +3,24 @@ package homeworks.homework2.task5;
 import java.util.Scanner;
 
 public class Task5 {
-        public static void main(String[]args) {
-        System.out.println("Введите первое целое число:");
+    public static void main(String[] args) {
+        int k = 1;
         Scanner scanner = new Scanner(System.in);
-        int valueFirst = scanner.nextInt();
-        System.out.println("Введите второе целое число:");
-        int valueSecond = scanner.nextInt();
-        System.out.println("Введите третье целое число:");
-        int valueThird = scanner.nextInt();
-        int[] values = {valueFirst, valueSecond, valueThird};
-        int minValue = findMinValue(values);
-        System.out.println("Минимальное число из введённых:" + minValue);
-        scanner.close();
-    }
-
-        private static int findMinValue(int[] array) {
-            int min = array[0];
-            for (int i = 0; i < array.length; i++) {
-                if (array[i] < min)
-                    min = array[i];
+        String exitValue = "\"end\"";
+        System.out.println("Введите число через Enter. Для завершения ввода напишите " + exitValue);
+        int minValue = 0;
+        String currentValue;
+        while (!(currentValue = scanner.nextLine()).equals(exitValue)) {
+            if (k++ == 1) {
+                minValue = Integer.parseInt(currentValue);
+                continue;
             }
-            return min;
+            if (minValue > Integer.parseInt(currentValue)) {
+                minValue = Integer.parseInt(currentValue);
+            }
         }
+        System.out.println(minValue);
+    }
 }
 
 

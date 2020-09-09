@@ -8,20 +8,25 @@ public class Task7 {
         Scanner scanner = new Scanner(System.in);
         int value = scanner.nextInt();
         scanner.close();
+        int callCost = 10;
+        String city;
+        double tariff;
         if (value == 905) {
-            System.out.println("Москва. Стоимость разговора: " + 4.15 * 10);
-        }
-        else if (value == 194) {
-            System.out.println("Ростов. Стоимость разговора: " + 1.98 * 10);
-        }
-        else if (value == 491) {
-            System.out.println("Краснодар. Стоимость разговора: " + 2.69 * 10);
-        }
-        else if (value == 800) {
-            System.out.println("Киров. Стоимость разговора: " + 5.0 * 10);
-        }
-        else {
+            city = "Москва";
+            tariff = 4.15;
+        } else if (value == 194) {
+            city = "Ростов";
+            tariff = 1.98;
+        } else if (value == 491) {
+            city = "Краснодар";
+            tariff = 2.69;
+        } else if (value == 800) {
+            city = "Киров";
+            tariff = 5.0;
+        } else {
             System.out.println("Неизвестный код города!");
+            return;
         }
+        System.out.println(city + ". Стоимость разговора: " + tariff * callCost);
     }
 }

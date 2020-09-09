@@ -10,12 +10,12 @@ public class Task10 {
         int temp;
         int l = values.length;
         int k = 0;
-        for (int i = l-1; i >= 0; i--) {
+        for (int i = l - 1; i >= 0; i--) {
             if (values[i] == 0) {
                 k += 1;
-                for (int j = i; j < l-k; j++) {
-                    temp = values[j+1];
-                    values[j+1] = values[j];
+                for (int j = i; j < l - k; j++) {
+                    temp = values[j + 1];
+                    values[j + 1] = values[j];
                     values[j] = temp;
                 }
             }

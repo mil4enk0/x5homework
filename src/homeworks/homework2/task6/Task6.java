@@ -7,20 +7,20 @@ public class Task6 {
         System.out.println("Введите целое число:");
         Scanner scanner = new Scanner(System.in);
         int value = scanner.nextInt();
-        if (value < 0 && (value % 2) != 0) {
-            System.out.println(value + " - отрицательное нечётное число");
+        System.out.print(value + " - ");
+        if (value == 0) {
+            System.out.print("нулевое число");
+            return;
         }
-        else if (value < 0 && (value % 2) == 0) {
-            System.out.println(value + " - отрицательное чётное число");
+        if (value < 0) {
+            System.out.print("отрицательное ");
+        } else {
+            System.out.print("положительное ");
         }
-        else if (value == 0) {
-            System.out.println(value + " - нулевое число");
-        }
-        else if (value > 0 && (value % 2) != 0) {
-            System.out.println(value + "- положительное нечётное число");
-        }
-        else if (value > 0 && (value % 2) == 0) {
-            System.out.println(value + " - положительное чётное число");
+        if (value % 2 == 0) {
+            System.out.print("чётное число");
+        } else {
+            System.out.print("нечётное число");
         }
         scanner.close();
     }
