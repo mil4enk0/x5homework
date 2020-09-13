@@ -7,7 +7,7 @@ public class Task5 {
         int k = 1;
         Scanner scanner = new Scanner(System.in);
         String exitValue = "\"end\"";
-        System.out.println("Введите число через Enter. Для завершения ввода напишите " + exitValue);
+        System.out.println("Введите список числа через Enter. Для завершения ввода напишите " + exitValue);
         int minValue = 0;
         String currentValue;
         while (!(currentValue = scanner.nextLine()).equals(exitValue)) {
