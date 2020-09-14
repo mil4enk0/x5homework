@@ -1,6 +1,6 @@
 package homeworks.homework4.task1;
 
-public class Circle implements Shape{
+public class Circle implements Shape {
 
     private double r;
 

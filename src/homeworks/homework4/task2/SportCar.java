@@ -1,6 +1,6 @@
 package homeworks.homework4.task2;
 
-public class SportCar extends Car{
+public class SportCar extends Car {
 
     SportCar(String mark, String carClass, double weight, Engine engine) {
         super(mark, carClass, weight, engine);

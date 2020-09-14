@@ -8,7 +8,7 @@ public class Task2 {
                 new Horse("tasty carrot", "cozy stable")
         };
         Veterinarian veterinarian = new Veterinarian();
-        for (Animal animal: animals) {
+        for (Animal animal : animals) {
             veterinarian.treatAnimal(animal);
         }
     }

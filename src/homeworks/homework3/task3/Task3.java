@@ -7,7 +7,7 @@ public class Task3 {
                 new Student("Борис", "Борькин", "12SS2", 5),
                 new Aspirant("Антон", "Тошкин", "12SS3", 5)
         };
-        for (Student student: students) {
+        for (Student student : students) {
             System.out.println(student.firstName + " " + student.lastName + " " + student.getScholarship());
         }
     }
