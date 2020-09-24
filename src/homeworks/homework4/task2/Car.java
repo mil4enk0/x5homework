@@ -7,7 +7,7 @@ public abstract class Car {
     protected double weight;
     protected Engine engine;
 
-    Car(String mark, String carClass, double weight, Engine engine) {
+    public Car(String mark, String carClass, double weight, Engine engine) {
         this.mark = mark;
         this.carClass = carClass;
         this.weight = weight;

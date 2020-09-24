@@ -4,7 +4,7 @@ public class Circle implements Shape {
 
     private double r;
 
-    Circle(double r) {
+    public Circle(double r) {
         this.r = r;
     }
 

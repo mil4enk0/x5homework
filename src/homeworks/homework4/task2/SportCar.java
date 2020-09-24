@@ -2,8 +2,11 @@ package homeworks.homework4.task2;
 
 public class SportCar extends Car {
 
-    SportCar(String mark, String carClass, double weight, Engine engine) {
+    private double speedLimit;
+
+    public SportCar(String mark, String carClass, double weight, Engine engine, double speedLimit) {
         super(mark, carClass, weight, engine);
+        this.speedLimit = speedLimit;
     }
 
     @Override
@@ -18,6 +21,7 @@ public class SportCar extends Car {
 
     @Override
     public void printInfo() {
-
+        System.out.println("Информация о спорткаре: " + getMark() + ", " + getCarClass() +
+                ", " + getEngine() + ", " + getWeight() + ", " + speedLimit);
     }
 }

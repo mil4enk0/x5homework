@@ -2,8 +2,11 @@ package homeworks.homework4.task2;
 
 public class Lorry extends Car {
 
-    Lorry(String mark, String carClass, double weight, Engine engine) {
+    private double liftingCapacity;
+
+    public Lorry(String mark, String carClass, double weight, Engine engine, double liftingCapacity) {
         super(mark, carClass, weight, engine);
+        this.liftingCapacity = liftingCapacity;
     }
 
     @Override
@@ -18,6 +21,7 @@ public class Lorry extends Car {
 
     @Override
     public void printInfo() {
-
+        System.out.println("Информация о грузовике: " + getMark() + ", " + getCarClass() +
+                ", " + getEngine() + ", " + getWeight() + ", " + liftingCapacity);
     }
 }
