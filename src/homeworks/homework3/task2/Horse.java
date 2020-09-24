@@ -4,8 +4,9 @@ public class Horse extends Animal {
 
     private boolean shod;
 
-    Horse(String food, String location) {
+    public Horse(boolean shod, String food, String location) {
         super(food, location);
+        this.shod = shod;
     }
 
     @Override

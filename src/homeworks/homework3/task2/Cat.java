@@ -4,8 +4,9 @@ public class Cat extends Animal {
 
     private double avgMeowsPerMin;
 
-    Cat(String food, String location) {
+    public Cat(double avgMeowsPerMin, String food, String location) {
         super(food, location);
+        this.avgMeowsPerMin = avgMeowsPerMin;
     }
 
     @Override

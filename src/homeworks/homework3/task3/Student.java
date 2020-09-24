@@ -2,12 +2,12 @@ package homeworks.homework3.task3;
 
 public class Student {
 
-    protected String firstName;
-    protected String lastName;
-    protected String group;
-    protected double avgMark;
+    private String firstName;
+    private String lastName;
+    private String group;
+    private double avgMark;
 
-    Student(String firstName, String lastName, String group, double avgMark) {
+    public Student(String firstName, String lastName, String group, double avgMark) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.group = group;
@@ -16,5 +16,17 @@ public class Student {
 
     public int getScholarship() {
         return avgMark == 5 ? 100 : 80;
+    }
+
+    public double getAvgMark() {
+        return avgMark;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
     }
 }

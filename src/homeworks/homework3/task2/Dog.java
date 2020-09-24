@@ -4,8 +4,9 @@ public class Dog extends Animal {
 
     private double borkVolume;
 
-    Dog(String food, String location) {
+    public Dog(double borkVolume, String food, String location) {
         super(food, location);
+        this.borkVolume = borkVolume;
     }
 
     @Override

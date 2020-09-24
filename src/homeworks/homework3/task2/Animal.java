@@ -2,10 +2,10 @@ package homeworks.homework3.task2;
 
 public class Animal {
 
-    protected String food;
-    protected String location;
+    private String food;
+    private String location;
 
-    Animal(String food, String location) {
+    public Animal(String food, String location) {
         this.food = food;
         this.location = location;
     }

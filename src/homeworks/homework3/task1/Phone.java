@@ -8,15 +8,15 @@ public class Phone {
     private String model;
     private double weight;
 
-    Phone() {
+    public Phone() {
     }
 
-    Phone(String number, String model, double weight) {
+    public Phone(String number, String model, double weight) {
         this(number, model);
         this.weight = weight;
     }
 
-    Phone(String number, String model) {
+    public Phone(String number, String model) {
         this.number = number;
         this.model = model;
     }
