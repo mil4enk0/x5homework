@@ -7,7 +7,7 @@ public class CollectionArrayList<E> {
     private Object[] values = {};
 
     public int size() {
-      return values.length;
+        return values.length;
     }
 
     public void add(E item) {
@@ -17,7 +17,7 @@ public class CollectionArrayList<E> {
                 newValues[i] = item;
                 continue;
             }
-            newValues[i] = values [i];
+            newValues[i] = values[i];
         }
         values = (E[]) newValues;
     }
